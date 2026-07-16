@@ -1,0 +1,101 @@
+:root {
+    --primary-color: #20577d
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+body > header {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+#course-title {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+nav{
+    background-color: #333;
+}
+
+nav ul {
+    margin: 0;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 8px;
+    padding: 20px 43px 14px;
+}
+
+h1 {
+    grid-column: 1 / -1;
+    margin: 5px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.card {
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card > header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 2px;
+}
+
+#lastModified {
+    color: yellow;
+    font-size: 0.8rem;
+}
