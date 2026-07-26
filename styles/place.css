@@ -1,0 +1,47 @@
+:root {
+    --primary-color: red;
+    --border-color: rgb(5, 113, 5);
+    --title-text-color: white;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 5px;
+    border-bottom: 1rem var(--border-color) solid;
+    color: var(--title-text-color);
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
+
+#hero {
+    width: 100%;
+    height: auto;
+}
+
+table{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 15px;
+}
+
+.table-head {
+    text-align: right;
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    color: var(--title-text-color);
+}

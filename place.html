@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3 | place.html</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Utah, USA</h1>
+    </header>
+    <main>
+        <img 
+        src="images/welcome-utah.webp" 
+        alt="" 
+        srcset="images/utah-arch.webp, images/welcome-utah.webp"
+        sizes=""
+        id="hero">
+        <div id="data">
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <td class="table-head">Area: </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="table-head">Population: </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="table-head">Capital: </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="table-head">Languages: </td>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <td class="table-head">Currency: </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="table-head">Time Zone: </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="table-head">Calling Code: </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="table-head">Internet TLD: </td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div id="weather">
+            <h2>Weather <img id="weather-icon" src="images/partly-cloudy.svg" alt="Partly Cloudy"></h2>
+            <table>
+                <tr>
+                    <td class="table-head">Temperature: </td>
+                    <td>73 &deg;F</td>
+                </tr>
+                <tr>
+                    <td class="table-head">Conditions: </td>
+                    <td>Partly Cloudy</td>
+                </tr>
+                <tr>
+                    <td class="table-head">Wind: </td>
+                    <td>14mi/h</td>
+                </tr>
+                <tr>
+                    <td class="table-head">Wind Chill: </td>
+                    <td>68 &deg;F</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Devin Hale | Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
