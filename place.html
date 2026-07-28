@@ -12,12 +12,12 @@
         <h1>Utah, USA</h1>
     </header>
     <main>
-        <img 
-        src="images/welcome-utah.webp" 
-        alt="" 
-        srcset="images/utah-arch.webp, images/welcome-utah.webp"
-        sizes=""
-        id="hero">
+        <div class="hero-image">
+            <picture>
+                <source media="(min-width:600px)" srcset="images/welcome-utah.webp">
+                <img src="images/utah-arch.webp" alt="welcome to utah sign">
+            </picture>
+        </div>
         <div id="data">
             <h2>Data</h2>
             <table>

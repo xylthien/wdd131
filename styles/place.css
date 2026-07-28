@@ -1,6 +1,6 @@
 :root {
-    --primary-color: red;
-    --border-color: rgb(5, 113, 5);
+    --primary-color: blue;
+    --border-color: gold;
     --title-text-color: white;
 }
 
@@ -19,11 +19,23 @@ header {
 
 main {
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
-
-#hero {
+.hero-image, .hero-image picture{
     width: 100%;
     height: auto;
+    display: block;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#data, #weather {
+    padding: 1rem;
 }
 
 table{
@@ -44,4 +56,36 @@ footer {
     background-color: var(--primary-color);
     text-align: center;
     color: var(--title-text-color);
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        position: relative;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-image img {
+        width: 100%;
+        display: block;
+    }
+
+    #data, #weather {
+        position: absolute;
+        z-index: 1;
+        background: rgba(255, 255,255, 0.9);
+    }
+
+    #data {
+        top: 2rem;
+        left: 1rem;
+    }
+
+    #weather {
+        bottom: 2rem;
+        right: 1rem;
+    }
 }
