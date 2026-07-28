@@ -1,0 +1,91 @@
+:root {
+    --primary-color: blue;
+    --border-color: gold;
+    --title-text-color: white;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 5px;
+    border-bottom: 1rem var(--border-color) solid;
+    color: var(--title-text-color);
+    text-align: center;
+}
+
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.hero-image, .hero-image picture{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#data, #weather {
+    padding: 1rem;
+}
+
+table{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 15px;
+}
+
+.table-head {
+    text-align: right;
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    color: var(--title-text-color);
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        position: relative;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-image img {
+        width: 100%;
+        display: block;
+    }
+
+    #data, #weather {
+        position: absolute;
+        z-index: 1;
+        background: rgba(255, 255,255, 0.9);
+    }
+
+    #data {
+        top: 2rem;
+        left: 1rem;
+    }
+
+    #weather {
+        bottom: 2rem;
+        right: 1rem;
+    }
+}
