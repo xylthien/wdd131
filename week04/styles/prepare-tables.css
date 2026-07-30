@@ -1,0 +1,47 @@
+:root {
+    --table-head-bg-color: rgb(114, 110, 110);
+    --table-title-bg-color: black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+caption{
+    caption-side: bottom;
+}
+
+thead {
+    background-color: var(--table-title-bg-color);
+    color: white;
+}
+
+.table-title, .blank-space {
+    background-color: var(--table-title-bg-color);
+}
+
+.blank-space {
+    color: var(--table-title-bg-color);
+}
+
+th {
+    background-color: var(--table-head-bg-color);
+    color: white;
+    padding: 1em 2em;
+}
+
+th, td {
+    text-align: center;
+}
+
+td {
+    border: 1px lightgray solid;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(223, 223, 223);
+}
