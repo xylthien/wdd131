@@ -1,0 +1,28 @@
+@media (min-width: 740px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menuButton {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    nav a {
+        flex: 1 1 100%;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
