@@ -1,0 +1,42 @@
+:root {
+    --bg-color: #e8d5b5;
+    --text-color: #2b2118;
+    --heading-color: #7a2e2e;
+    --border-color: #b08d57;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.logo {
+    width: 100px;
+}
+
+h1, h2, h3 {
+    color: var(--heading-color);
+    font-family: "Cinzel", serif;
+}
+
+body {
+    font-family: "Lora", serif;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+th, td {
+    border: var(--border-color) 2px solid;
+    padding: 1rem .5rem;
+}
+
+#mobile-wireframe {
+    width: 250px;
+}
+
+#desktop-wireframe {
+    width: 600px;
+}
