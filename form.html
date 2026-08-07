@@ -45,18 +45,29 @@
                 <input type="date" name="complete-date" id="complete-date" required>
             </div>
 
-            <div>Which features did you find useful in the product?<br><span class="italics">(Check all that apply)</span>
-                <input type="checkbox" id="design" name="design" value="yes">
-                <label for="design">Design</label>
-                
-                <input type="checkbox" id="durability" name="durability" value="yes">
-                <label for="durability">Durability</label>
-                
-                <input type="checkbox" id="ease-of-use" name="ease-of-use" value="yes">
-                <label for="ease-of-use">Ease of Use</label>
-                
-                <input type="checkbox" id="performance" name="performance" value="yes">
-                <label for="performance">Performance</label>
+            <div id="features">
+                Which features did you find useful in the product?<br>
+                <span class="italics">(Check all that apply)</span>
+            
+                <div>
+                    <input type="checkbox" id="design" name="design" value="yes">
+                    <label for="design">Design</label>
+                </div>
+            
+                <div>
+                    <input type="checkbox" id="durability" name="durability" value="yes">
+                    <label for="durability">Durability</label>
+                </div>
+            
+                <div>
+                    <input type="checkbox" id="ease-of-use" name="ease-of-use" value="yes">
+                    <label for="ease-of-use">Ease of Use</label>
+                </div>
+            
+                <div>
+                    <input type="checkbox" id="performance" name="performance" value="yes">
+                    <label for="performance">Performance</label>
+                </div>
             </div>
             
             <div>
@@ -66,7 +77,7 @@
 
             <div>
                 <label for="userName">Your Name <span class="optional">(Optional)</span></label>
-                <input type="text" name="userName" id="userName"></input>
+                <input type="text" name="userName" id="userName">
             </div>
 
             <input type="submit" value="Post Review">
