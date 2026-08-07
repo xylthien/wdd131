@@ -54,6 +54,7 @@ body {
 }
 
 .pr1 input[type="date"],
+.pr1 input[type="text"],
 .pr1 textarea,
 .pr1 select {
     width: 100%;
